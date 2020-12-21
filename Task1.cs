@@ -14,8 +14,16 @@ namespace Program
 
             Console.WriteLine("My name is {0} and my super powers are {1} & {2}. I'm {3} years old and my speed is {4}",characterName,superPower1,superPower2,age,speed);
             
-            //Console.WriteLine("The character is " + characterName + ", his speed is " + speed + " and he is " + age + " years old.");
-            //Console.WriteLine("He have 2 super powers, the 1st one is " + superPower1 + ", and the 2nd super power is " + superPower2 + ".");
+            String heroName = "Thor";
+            double heroHeight = 190.8;
+            int heroAge = 430;
+            String heroSuperPower1 = "Thunder";
+            String heroSuperPower2 = "Rage";
+            int ageDifference = age - heroAge;
+            
+            Console.WriteLine();
+            Console.WriteLine("The age difference is " + ageDifference);
+
         }
     }
 }
