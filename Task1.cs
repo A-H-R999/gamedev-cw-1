@@ -4,6 +4,8 @@ namespace Program
 {
     class Task1
     {
+        static double playerSpeed;
+        static int[] charPowerValues = new int[] { 25, 60, 40 };
         static void Main(string[] args)
         {
             String characterName = "Ryuk";
@@ -27,6 +29,38 @@ namespace Program
             Console.WriteLine(superPower1 == heroSuperPower1 || superPower1 == heroSuperPower2 
                            || superPower2 == heroSuperPower1 || superPower2 == heroSuperPower2); // Bonus
 
+            setSpeed(2.5);
+
+            Console.WriteLine("The current player speed is " + getSpeed());
+
+            powerComparison(charPowerValues);
+
+        }
+
+        static void setSpeed(double newSpeed)
+        {
+            playerSpeed = newSpeed;
+        }
+
+        static double getSpeed()
+        {
+            return playerSpeed;
+        }
+
+        static void powerComparison(int[] newPowerValue)
+        {
+            if (newPowerValue[0] > newPowerValue[2])
+            {
+                Console.WriteLine("The 1st hero is more powerful");
+            }
+            else if (newPowerValue[0] < newPowerValue[2])
+            {
+                Console.WriteLine("The 3rd hero is more powerful");
+            }
+            else
+            {
+                Console.WriteLine("Neither is more powerful");
+            }
         }
     }
 }
