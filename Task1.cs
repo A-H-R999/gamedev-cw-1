@@ -18,11 +18,14 @@ namespace Program
             double heroHeight = 190.8;
             int heroAge = 430;
             String heroSuperPower1 = "Thunder";
-            String heroSuperPower2 = "Rage";
+            String heroSuperPower2 = "Flying";
             int ageDifference = age - heroAge;
             
             Console.WriteLine();
             Console.WriteLine("The age difference is " + ageDifference);
+
+            Console.WriteLine(superPower1 == heroSuperPower1 || superPower1 == heroSuperPower2 
+                           || superPower2 == heroSuperPower1 || superPower2 == heroSuperPower2); // Bonus
 
         }
     }
