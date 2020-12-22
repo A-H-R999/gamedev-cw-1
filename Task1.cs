@@ -14,7 +14,8 @@ namespace Program
             String superPower1 = "Invisibility";
             String superPower2 = "Flying";
 
-            Console.WriteLine("My name is {0} and my super powers are {1} & {2}. I'm {3} years old and my speed is {4}",characterName,superPower1,superPower2,age,speed);
+            Console.WriteLine("My name is {0} and my super powers are {1} & {2}. I'm {3} years old and my speed is {4}"
+                             ,characterName,superPower1,superPower2,age,speed);
             
             String heroName = "Thor";
             double heroHeight = 190.8;
